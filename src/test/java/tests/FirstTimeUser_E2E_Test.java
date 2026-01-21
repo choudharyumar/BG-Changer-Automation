@@ -20,6 +20,7 @@ public class FirstTimeUser_E2E_Test extends BaseTest {
         // Onboarding screens
 
         Onboarding_Test onboardingTest = new Onboarding_Test(driver);
+        onboardingTest.completeSwipeFlow();
         onboardingTest.onboarding1NextBtn();
         onboardingTest.onboarding2NextBtn();
         onboardingTest.onboarding3NextBtn();
