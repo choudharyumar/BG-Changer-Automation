@@ -50,6 +50,20 @@ public class Home_Test {
         }
     }
 
+    public void closeUpdateAppDialogIfVisible() {
+        try {
+            WebElement elements =
+                    wait.until(ExpectedConditions.visibilityOfElementLocated(AppiumBy.id("com.mga" +
+                            ".bg.changer.ai.background.remover:id/title")));
+            driver.findElement(AppiumBy.id("com.mga.bg.changer.ai.background" +
+                    ".remover:id/permission_exit")).click();
+
+
+        } catch (Exception e) {
+
+        }
+    }
+
 
     public void homeScreenDisplayed() {
         try {

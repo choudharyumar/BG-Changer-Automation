@@ -22,18 +22,14 @@ public class BaseTest {
 
         caps.setCapability("platformName", "Android");
         caps.setCapability("automationName", "UiAutomator2");
-//        caps.setCapability("deviceName", "d7a400dd");
-//        caps.setCapability("deviceName", "de33ae3c");
         caps.setCapability("deviceName", "23091JEGR02444");
 
         caps.setCapability("appPackage", "com.mga.bg.changer.ai.background.remover");
         caps.setCapability("appActivity", "com.jehanzeb.bgchanger.ui.SplashScreen");
 
-        caps.setCapability("noReset", false);
+        caps.setCapability("noReset", true);
 
-        // 🔥 VERY IMPORTANT FOR ANDROID 14 / 15 which have diff operating system
-//        caps.setCapability("ignoreHiddenApiPolicyError", true);
-//        caps.setCapability("disableHiddenApiPolicy", true);
+
 
         driver = new AndroidDriver(
                 new URL("http://127.0.0.1:4723/wd/hub"),

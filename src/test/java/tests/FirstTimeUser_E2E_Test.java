@@ -28,6 +28,7 @@ public class FirstTimeUser_E2E_Test extends BaseTest {
 
         // Home screen
         Home_Test homeTest = new Home_Test(driver);
+        homeTest.closeUpdateAppDialogIfVisible();
         homeTest.clickAllowOnNotificationPermissionDialog();
         homeTest.clickAllowOnSystemNotificationPermissionDialog();
         homeTest.homeScreenDisplayed();
