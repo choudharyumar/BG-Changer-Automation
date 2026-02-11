@@ -27,5 +27,5 @@ public class WaitUtils {
         return wait.until(ExpectedConditions.visibilityOfElementLocated(locator)).isDisplayed();
     }
 
-    //public boolean waitUntilVisibleByXpath(By xpath)
+
 }

@@ -18,6 +18,7 @@ public class BgChangerModule extends BaseTest {
 
         BgChangerGalleryScreen  bgChangerGalleryScreen = new BgChangerGalleryScreen(driver);
         bgChangerGalleryScreen.handleGalleryPermission();
+        bgChangerGalleryScreen.clickImageInGallery();
 
     }
 }
